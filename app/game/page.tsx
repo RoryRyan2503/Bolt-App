@@ -11,31 +11,36 @@ const GameLayout = ({
 }) => {
     return(
         <>
-        <div className="flex justify-end p-5">
-            <UserButton afterSignOutUrl="/" />
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <p className="pb-10">Themes Choice</p>
+         <div className="bg-slate-800 h-auto">
+           
+           <div className="flex justify-end p-5 ">
+   
+               
+               <UserButton afterSignOutUrl="/" />
+           </div>
+           </div>
+        <div className="flex flex-col justify-center items-center p-40">
+          <p className="pb-10 text-2xl">Themes Choice</p>
         <ul className="flex justify-center items-center">
-            <li className="p-5">
-                <Link href="/">
-                    <Button>Horror</Button>
+            <li className="p-5 ">
+                <Link href="/choice">
+                    <Button className="text-lg" >Horror</Button>
                 </Link>
             </li>
             <li className="p-5">
-                <Link href="/">
-                    <Button>Thiller</Button>
+                <Link href="/choice">
+                    <Button className="text-lg" >Thiller</Button>
                 </Link>
             </li>
             <li className="p-5"> 
-                <Link href="/">
-                    <Button>Fantasy</Button>
+                <Link href="/choice">
+                    <Button className="text-lg" >Fantasy</Button>
                 </Link>
             </li>
         </ul>
             
             <div className="pt-10 ">
-           <Link href="/game">
+           <Link href="/custom">
             <Button variant="destructive" size="lg">Custom</Button>
             </Link>
             </div>

@@ -10,9 +10,14 @@ const DashboardLayout = ({
 }) => {
     return(
         <>
-        <div className="flex justify-end p-5">
-            <UserButton afterSignOutUrl="/" />
-        </div>
+         <div className="bg-slate-800 h-auto">
+           
+           <div className="flex justify-end p-5 ">
+   
+               
+               <UserButton afterSignOutUrl="/" />
+           </div>
+           </div>
         <div className="flex flex-col justify-center items-center">
             <div>
             <Image
