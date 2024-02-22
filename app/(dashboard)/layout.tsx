@@ -10,28 +10,29 @@ const DashboardLayout = ({
 }) => {
     return(
         <>
-         <div className="bg-slate-800 h-auto">
+         <div className="bg-slate-800 relative z-10 h-auto">
            
-           <div className="flex justify-end p-5 ">
+           <div className="flex relative z-10 justify-end p-5 ">
    
                
                <UserButton afterSignOutUrl="/" />
            </div>
            </div>
-        <div className="flex flex-col justify-center items-center">
-            <div>
-            <Image
-                width={500}
-                height={500}
-                alt="Logo"
-                src="/gamelogo.jpg"
-            />
+           <div className="absolute inset-0 h-full">
+                <Image
+                    src="/DunXr.jpg"
+                    alt="background image"
+                    width={1920}
+                    height={1080}
+                    className="opacity-90"
+                />
             </div>
-            <div className="pt-10 ">
+        <div className="flex relative z-10 justify-center items-center h-full">
+            
            <Link href="/game">
-            <Button variant="destructive" size="lg">Start Game</Button>
+            <Button className="text-xl p-7"  size="lg">Start Game</Button>
             </Link>
-            </div>
+            
         </div>
         
         </>
