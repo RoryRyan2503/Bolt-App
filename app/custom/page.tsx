@@ -24,7 +24,7 @@ const CustomLayout = () => {
             <Textarea className="h-56" />
             </div>
             <div className="pt-10 ">
-           <Link href="/">
+           <Link href="/choice">
             <Button variant="destructive" size="lg">Submit</Button>
             </Link>
             </div>

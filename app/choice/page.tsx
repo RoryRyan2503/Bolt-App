@@ -24,7 +24,7 @@ const ChoiceLayout = () => {
             <p></p>
             </div>
             <div className="pt-10 ">
-           <Link href="/">
+           <Link href="/dice">
             <Button variant="destructive" size="lg">Continue</Button>
             </Link>
             </div>

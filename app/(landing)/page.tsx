@@ -10,6 +10,7 @@ const LandingPage = () => {
     return (
         < >
         <div className="absolute inset-0">
+
                 <Image
                     src="/sunset.jpg"
                     alt="background image"
@@ -18,17 +19,21 @@ const LandingPage = () => {
                 />
             </div>
         <div className="relative z-10 flex flex-col justify-center items-center  h-full">
+            <div>
             <span className="p-10 text-8xl ">
             <Typewriter 
             words={['Welcome to DunXr!','Ready for an Adventure?','Play Now!']}
             loop={100}
             typeSpeed={70}
             deleteSpeed={50}
-            delaySpeed={2000}
+            delaySpeed={1500}
            
           />
+          
           </span>
-            <div className="flex justify-center">
+          </div>
+          
+            <div className="flex justify-center mt-10">
                 <Link className="pr-10" href="/sign-in">
                   
                     <Button className="">
