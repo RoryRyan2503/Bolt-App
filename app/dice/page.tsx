@@ -19,7 +19,7 @@ const DiceRoller: React.FC = () => {
       <h1 className="text-3xl font-bold mb-10">What's fate got to say about it?</h1>
       <div className="flex mb-4">
         <div className='flex flex-col'>
-        <div className='text-xl text-center'>X's Roll</div>
+        <div className='text-xl text-center'>AI's Roll</div>
         <div className="w-56 h-56 bg-gray-200 mr-4 flex items-center justify-center">
           <img src={`/dice/Dice${dice1}.png`} alt={`Dice 1: ${dice1}`} />
         </div>
